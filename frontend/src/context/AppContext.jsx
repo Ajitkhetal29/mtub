@@ -10,7 +10,7 @@ const AppContextProvider = (props) => {
 
     const [users, setusers] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    const backendUrl = "https://mtub.onrender.com"
+    const backendUrl = import.meta.env.VITE_API_URL
 
     const fetchUsers = async () => {
 
@@ -18,7 +18,7 @@ const AppContextProvider = (props) => {
         setIsLoading(true)
 
         try {
-            const resposne = await axios.get(`${backendUrl}/api/user/getUser`);
+            const resposne = await axios.get(`${backendUrl}/user/getUser`);
             console.log(resposne);
 
             if (resposne.data.success) {
