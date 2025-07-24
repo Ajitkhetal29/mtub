@@ -10,7 +10,7 @@ const AppContextProvider = (props) => {
 
     const [users, setusers] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    const backendUrl = import.meta.env.VITE_API_URL
+    const backendUrl = "https://mtub.onrender.com/api"
 
     const fetchUsers = async () => {
 
