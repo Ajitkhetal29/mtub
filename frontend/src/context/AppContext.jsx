@@ -18,7 +18,7 @@ const AppContextProvider = (props) => {
         setIsLoading(true)
 
         try {
-            const resposne = await axios.get(`${backendUrl}/user/getUser`);
+            const resposne = await axios.get(`${backendUrl}/api/user/getUser`);
             console.log(resposne);
 
             if (resposne.data.success) {
