@@ -10,7 +10,7 @@ const AppContextProvider = (props) => {
 
     const [users, setusers] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
-    const backendUrl = "http://localhost:3000/api"
+    const backendUrl = "https://mtub.onrender.com"
 
     const fetchUsers = async () => {
 
