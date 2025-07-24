@@ -14,6 +14,7 @@ const AppContextProvider = (props) => {
 
     const fetchUsers = async () => {
 
+
         setIsLoading(true)
 
         try {

@@ -15,7 +15,7 @@ connectDB();
 
 app.use("/api/user", userRouter);
 
-const addMultipleUsers = async () => {
+const addMultipleUsers = async () => {9
   await userModel.insertMany(users);
   console.log("users added");
 };
